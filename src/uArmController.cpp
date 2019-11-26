@@ -60,10 +60,10 @@ void uArmController::init()
 
     }
 
-    mServo[SERVO_ROT_NUM].setPulseWidthRange(500, 2500);
-    mServo[SERVO_LEFT_NUM].setPulseWidthRange(500, 2500);
-    mServo[SERVO_RIGHT_NUM].setPulseWidthRange(500, 2500);
-    mServo[SERVO_HAND_ROT_NUM].setPulseWidthRange(600, 2400);
+    //mServo[SERVO_ROT_NUM].setPulseWidthRange(500, 2500);
+    //mServo[SERVO_LEFT_NUM].setPulseWidthRange(500, 2500);
+    //mServo[SERVO_RIGHT_NUM].setPulseWidthRange(500, 2500);
+    //mServo[SERVO_HAND_ROT_NUM].setPulseWidthRange(600, 2400);
 
 	attachAllServo();  
 
@@ -167,8 +167,8 @@ void uArmController::writeServoAngle(byte servoNum, double servoAngle, boolean w
     }
 #endif
 
-
-    mServo[servoNum].write(servoAngle, mServoSpeed);
+    //mServo[servoNum].write(servoAngle, mServoSpeed);
+    mServo[servoNum].write(servoAngle);
 }
 
 

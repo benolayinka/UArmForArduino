@@ -4,7 +4,7 @@
 #include <Arduino.h>
 #include <EEPROM.h>
 #include <Wire.h>
-#include "UFServo.h"
+#include <Servo.h>
 #include "uArmConfig.h"
 #include "uArmTypes.h"
 #include "uArmPin.h"
