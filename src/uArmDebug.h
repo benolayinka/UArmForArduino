@@ -13,7 +13,7 @@
 #include <Arduino.h>
 #include "uArmConfig.h"
 
-
+#define DEBUG 1
 
 #ifdef DEBUG
 	#define debugPrint	mprint
